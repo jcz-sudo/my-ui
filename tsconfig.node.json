@@ -4,7 +4,13 @@
     "module": "esnext",
     "moduleResolution": "node",
     "strict": true,
+
+    // Starting in Vue 3.4, Vue no longer implicitly registers the global JSX namespace. 
+    //  To instruct TypeScript to use Vue's JSX type definitions,
+    // make sure to include the following in your tsconfig.json
     "jsx": "preserve",
+    "jsxImportSource": "vue",
+
     "incremental": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
@@ -17,6 +23,7 @@
     "allowJs": true,           // 允许编译 JavaScript 文件
     "checkJs": true,           // 对 JavaScript 文件进行类型检查
     "allowSyntheticDefaultImports": true, // 允许合成默认导入
+    "allowImportingTsExtensions": true,
     "esModuleInterop": true     // 启用 ES 模块互操作性
   },
   "include": ["src/**/*"],

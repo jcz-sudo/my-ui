@@ -1,5 +1,6 @@
 import { defineComponent } from 'vue';
-
+import buttonStyle from "./button.module.scss"
+console.log(buttonStyle)
 export default defineComponent({
   name: 'MyButton',
   props: {
@@ -16,7 +17,7 @@ export default defineComponent({
     };
 
     return () => (
-      <button class="my-button" onClick={handleClick}>
+      <button class={buttonStyle.myButton} onClick={handleClick}>
         {slots.default ? slots.default():props.text}
       </button>
     );
