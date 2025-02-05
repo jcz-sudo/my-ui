@@ -1,10 +1,12 @@
 import { createApp } from 'vue'
-import type {App} from "vue"
-import Button from './components/Button/Button.vue';
+import type {App as app} from "vue"
+import Button from './components/Button/Button.tsx';
 
-const app = createApp({})
-app.component("MyButton",Button)
+import App from "./App.vue"
 
-export default function install(app:App){
+const app = createApp(App)
+app.component("MyButton",Button).mount("#app")
+
+export default function install(app:app){
   app.component("MyButton",Button)
 }

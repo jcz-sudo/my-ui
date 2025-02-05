@@ -1,9 +1,11 @@
 <script setup lang="ts">
 // import HelloWorld from "@/components/HelloWorld.vue";
+import MyButton from "./components/Button/Button.tsx";
 </script>
 
 <template>
   <div>jsonFormat</div>
+  <MyButton>11111</MyButton>
   <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>
 
