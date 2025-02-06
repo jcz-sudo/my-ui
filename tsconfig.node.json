@@ -16,10 +16,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
     "allowJs": true,           // 允许编译 JavaScript 文件
     "checkJs": true,           // 对 JavaScript 文件进行类型检查
     "allowSyntheticDefaultImports": true, // 允许合成默认导入

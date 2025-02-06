@@ -1,6 +1,7 @@
 // import { createApp } from 'vue'
 import type {App as app} from "vue"
 import Button from './components/Button/Button.tsx';
+import JsonTree from './components/Tree';
 
 //测试使用
 // import App from "./App.vue"
@@ -8,8 +9,11 @@ import Button from './components/Button/Button.tsx';
 //测试使用
 // const app = createApp(App)
 // app.component("MyButton",Button).mount("#app")
+// app.component("jsonTree",JsonTree)
+
 
 // const app = createApp({})
 export default function install(app:app){
   app.component("MyButton",Button)
+  app.component("jsonTree",JsonTree)
 }
