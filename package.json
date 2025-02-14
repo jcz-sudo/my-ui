@@ -1,27 +1,15 @@
 {
-  "name": "mcl-test",
-  "version": "0.0.1-beta0.2",
-  "description": "json格式化高亮组件",
-  "type": "module",
-  "main": "dist/main.js",
-  "module": "dist/main.js",
-  "files": [
-    "dist/"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yourusername/my-component-library.git"
-  },
-  "keywords": [
-    "vue",
-    "jsonformat",
-    "hightlight"
-  ],
+  "name": "x-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "example:dev": "pnpm run -C example dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "vue": "^3.5.13"
   },
