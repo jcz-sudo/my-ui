@@ -1,0 +1,27 @@
+{
+    "name": "@x-ui/shared",
+    "version": "0.0.0",
+    "description": "x-ui组件库公共方法",
+    "keywords": ["vue","typeScript"],
+    "main": "index.js",
+    "module": "index.mjs",
+    "scripts": {
+      "test": "echo hello world",
+      "build":"vite build"
+    },
+    "exports":{
+      ".":{
+        "require":"./dist/index.js",
+        "import":"./dist/index.mjs"
+      }
+    },
+    "files": ["dist","README.md"],
+    "peerDependencies": {
+      "vue": ">=3.0.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/jcz-sudo/my-ui.git"
+    }
+  }
+  

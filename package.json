@@ -1,15 +1,12 @@
 {
   "name": "x-ui",
-  "version": "1.0.0",
-  "description": "",
+  "private":"true",
+  "description": "一个基于element-plus二次开发的ui组件库",
   "main": "index.js",
   "scripts": {
     "example:dev": "pnpm run -C example dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "vue": "^3.5.13"
   },
