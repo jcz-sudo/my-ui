@@ -1,28 +1,28 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import vueJsx from "@vitejs/plugin-vue-jsx"
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import vueJsx from '@vitejs/plugin-vue-jsx';
 
 export default defineConfig({
-  plugins: [vue(),vueJsx()],
-  build:{
-    lib:{
-      entry:"index.ts",
-      name:"MyComponentLibrary",
-      fileName:"index"
+  plugins: [vue(), vueJsx()],
+  build: {
+    lib: {
+      entry: 'index.ts',
+      name: 'xUI',
+      fileName: 'index',
     },
-    rollupOptions:{
-      external:["vue"],
-      output:{
-        globals:{
-          vue:"Vue"
-        }
-      }
-    }
+    rollupOptions: {
+      external: ['vue'],
+      output: {
+        globals: {
+          vue: 'Vue',
+          // 'element-plus': 'ElementPlus',
+        },
+      },
+    },
   },
-  resolve:{
-    alias:{
-      "@":"/src"
-    }
-  }
-})
-
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
+});

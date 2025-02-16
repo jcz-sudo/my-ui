@@ -1,7 +1,8 @@
 <template>
-  <button class="my-button" @click="$emit('click')">
+  <!-- <button class="my-button" @click="$emit('click')">
     <slot>{{ text }}</slot>
-  </button>
+  </button> -->
+  <el-button type="primary" plain>xUI按钮111</el-button>
 </template>
 
 <script lang="ts">

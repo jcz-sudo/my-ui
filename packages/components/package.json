@@ -1,30 +1,38 @@
 {
   "name": "@x-ui/components",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "x-ui组件",
-  "keywords": ["vue","elementPlus","ui"],
+  "keywords": [
+    "vue",
+    "elementPlus",
+    "ui"
+  ],
   "scripts": {
     "test": "echo hello world",
-    "build":"vite build"
+    "build": "vite build"
   },
   "main": "index.js",
   "module": "index.mjs",
-  "exports":{
-    ".":{
-      "require":"./dist/index.js",
-      "import":"./dist/index.mjs"
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
     },
     "./dist/": {
       "require": "./dist/",
       "import": "./dist/"
     }
   },
-  "files": ["dist","README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "peerDependencies": {
-    "vue": ">=3.0.0"
+    "vue": ">=3.0.0",
+    "element-plus": "^2.9.4"
   },
   "dependencies": {
-    "@x-ui/shared":"workspace:*"
+    "@x-ui/shared": "workspace:*"
   },
   "repository": {
     "type": "git",
