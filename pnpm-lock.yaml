@@ -43,6 +43,34 @@ importers:
         specifier: ^2.2.0
         version: 2.2.0(typescript@5.6.3)
 
+  example:
+    dependencies:
+      '@x-ui/components':
+        specifier: workspace:*
+        version: link:../packages/components
+      element-plus:
+        specifier: ^2.9.4
+        version: 2.9.4(vue@3.5.13(typescript@5.7.3))
+      vue:
+        specifier: ^3.5.13
+        version: 3.5.13(typescript@5.7.3)
+    devDependencies:
+      '@vitejs/plugin-vue':
+        specifier: ^5.2.1
+        version: 5.2.1(vite@6.1.0(@types/node@22.13.4)(less@4.2.2)(sass-embedded@1.85.0)(terser@5.39.0))(vue@3.5.13(typescript@5.7.3))
+      '@vue/tsconfig':
+        specifier: ^0.7.0
+        version: 0.7.0(typescript@5.7.3)(vue@3.5.13(typescript@5.7.3))
+      typescript:
+        specifier: ~5.7.2
+        version: 5.7.3
+      vite:
+        specifier: ^6.1.0
+        version: 6.1.0(@types/node@22.13.4)(less@4.2.2)(sass-embedded@1.85.0)(terser@5.39.0)
+      vue-tsc:
+        specifier: ^2.2.0
+        version: 2.2.0(typescript@5.7.3)
+
   packages/components:
     dependencies:
       '@x-ui/shared':
