@@ -22,6 +22,6 @@
     "allowImportingTsExtensions": true,
     "esModuleInterop": true     // 启用 ES 模块互操作性
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*","packages"],
   "exclude": ["node_modules"]
 }
