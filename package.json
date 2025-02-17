@@ -1,6 +1,6 @@
 {
-  "name": "x-ui",
-  "private":"true",
+  "name": "@x-ui",
+  "private": "true",
   "description": "一个基于element-plus二次开发的ui组件库",
   "main": "index.js",
   "scripts": {

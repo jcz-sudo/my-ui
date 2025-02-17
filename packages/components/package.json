@@ -11,18 +11,8 @@
     "test": "echo hello world",
     "build": "vite build"
   },
-  "main": "index.ts",
+  "main": "index.js",
   "module": "index.mjs",
-  "exports": {
-    ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs"
-    },
-    "./dist/": {
-      "require": "./dist/",
-      "import": "./dist/"
-    }
-  },
   "files": [
     "dist",
     "README.md"

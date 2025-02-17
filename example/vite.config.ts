@@ -4,12 +4,7 @@ import vue from '@vitejs/plugin-vue';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  resolve: {
-    alias: [
-      {
-        find: /^@x-ui\/components/,
-        replacement: '@x-ui/components',
-      },
-    ],
+  server:{
+    port:5174
   },
 });
