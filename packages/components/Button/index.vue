@@ -2,7 +2,7 @@
   <!-- <button class="my-button" @click="$emit('click')">
     <slot>{{ text }}</slot>
   </button> -->
-  <el-button type="primary" plain>xUI按钮</el-button>
+  <el-button type="primary" plain><slot></slot></el-button>
 </template>
 
 <script lang="ts">
