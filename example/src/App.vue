@@ -7,6 +7,7 @@ const inputVal = ref('');
 <template>
   <x-button>qqqq</x-button>
   <x-input v-model="inputVal" placeholder="请输入1111"></x-input>
+  <span class="x-button red">2222</span>
   <x-form></x-form>
 </template>
 

@@ -1,3 +1,6 @@
+import ElementPlus from 'element-plus';
+import './assets/styles/element/index.scss';
+
 import { isEven, isOdd } from '@x-ui/shared';
 import XButton from './Button/index.vue';
 import XTable from './Table/index.vue';
@@ -7,7 +10,10 @@ import { type App } from 'vue';
 export { XButton, XTable, xInput, xForm };
 export default {
   install: (app: App) => {
-    console.log(XButton);
+    app.use(ElementPlus, {
+      namespace: 'ep',
+    });
+    console.log(app);
     app.component('XButton', XButton);
     app.component('XTable', XTable);
     app.component('XInput', xInput);
