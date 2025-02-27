@@ -18,11 +18,13 @@
     "README.md"
   ],
   "peerDependencies": {
-    "vue": ">=3.0.0",
-    "element-plus": "^2.9.4"
+    "vue": ">=3.0.0"
   },
   "dependencies": {
-    "@x-ui/shared": "workspace:*"
+    "@vitejs/plugin-vue-jsx": "^4.1.1",
+    "@x-ui/shared": "workspace:*",
+    "@x-ui/utils": "workspace:*",
+    "element-plus": "^2.9.4"
   },
   "repository": {
     "type": "git",

@@ -3,6 +3,7 @@
     <slot>{{ text }}</slot>
   </button> -->
   <el-button type="primary" plain><slot></slot></el-button>
+  <span class="red">2333</span>
 </template>
 
 <script lang="ts">
@@ -18,7 +19,8 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style lang="scss" scoped>
+// @use '~/styles/element/index.scss' as *;
 .my-button {
   padding: 8px 16px;
   background-color: #42b983;
